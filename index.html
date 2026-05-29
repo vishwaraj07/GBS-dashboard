@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBS Awareness Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+</header>
+  <!-- SIDEBAR -->
+<header class="topnav" id="topnav">
+  <div class="topnav-brand"><span class="brand-gbs">GBS</span> Awareness</div>
+  <nav class="topnav-links" id="topnavLinks">
+    <button class="nav-btn active" data-section="home">Home</button>
+    <button class="nav-btn" data-section="symptoms">Symptoms &amp; Actions</button>
+    <button class="nav-btn" data-section="causes">Causes &amp; Risk Factors</button>
+    <button class="nav-btn" data-section="precautions">Precautions</button>
+    <button class="nav-btn" data-section="treatment">Treatment</button>
+    <button class="nav-btn" data-section="myths">Myth Buster</button>
+    <button class="nav-btn" data-section="dos">Do's &amp; Don'ts</button>
+    <button class="nav-btn" data-section="expert">Expert Corner</button>
+    <button class="nav-btn" data-section="gallery">Gallery</button>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topnav-logo">
+    <img src="images/logo.png" alt="ICMR NIV Logo" />
+  </div>
+</header>
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ======================== HOME ======================== -->
+<!-- ======================== HOME ======================== -->
+<section class="section active" id="home">
+  <div class="section-inner home-section-inner">
+
+    <!-- HERO BANNER -->
+ <!-- HERO BANNER -->
+<div class="hero-banner">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Public Health Awareness Campaign</div>
+    <h1 class="hero-title">Guillain-Barré Syndrome <span class="gbs-red">(GBS)</span></h1>
+    <p class="hero-subtitle">
+      A rare but serious neurological disorder where the immune system mistakenly attacks the peripheral nervous system. Know the signs. Act fast. Save lives.
+    </p>
+    <div class="hero-tags">
+      <span class="tag tag-red">Rare but Serious</span>
+      <span class="tag tag-blue">Treatable</span>
+      <span class="tag tag-green">Recovery Possible</span>
+      <span class="tag tag-orange">Act Fast</span>
+    </div>
+    <button class="hero-cta" onclick="document.querySelector('[data-section=symptoms]').click()">
+      Know the Symptoms
+    </button>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat-stack">
+      <div class="hero-stat-card hero-stat-blue">
+        <div class="hero-stat-icon">&#128101;</div>
+        <div>
+          <div class="hero-stat-num">230+</div>
+          <div class="hero-stat-label">Cases in Pune 2025 Outbreak</div>
+        </div>
+      </div>
+      <div class="hero-stat-card hero-stat-green">
+        <div class="hero-stat-icon">&#128200;</div>
+        <div>
+          <div class="hero-stat-num">5.2%</div>
+          <div class="hero-stat-label">Case Fatality Rate Maharashtra</div>
+        </div>
+      </div>
+      <div class="hero-stat-card hero-stat-orange">
+        <div class="hero-stat-icon">&#128100;</div>
+        <div>
+          <div class="hero-stat-num">55%+</div>
+          <div class="hero-stat-label">Cases Under Age 30</div>
+        </div>
+      </div>
+      <div class="hero-stat-card hero-stat-teal">
+        <div class="hero-stat-icon">&#128197;</div>
+        <div>
+          <div class="hero-stat-num">2 Weeks</div>
+          <div class="hero-stat-label">Window for Effective Treatment</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- SLIDER -->
+    <div class="slider-container">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide"><div class="slide-placeholder slide-p1"></div></div>
+        <div class="slide"><div class="slide-placeholder slide-p2"></div></div>
+        <div class="slide"><div class="slide-placeholder slide-p3"></div></div>
+        <div class="slide"><div class="slide-placeholder slide-p4"></div></div>
+        <div class="slide"><div class="slide-placeholder slide-p5"></div></div>
+      </div>
+      <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous slide">&#8249;</button>
+      <button class="slider-btn slider-next" id="sliderNext" aria-label="Next slide">&#8250;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+
+    <!-- QUICK INFO CARDS -->
+<div class="home-info-grid">
+  <div class="home-info-card home-info-blue">
+    <div class="home-info-icon"><img src="images/icons/i1.png" alt="GBS icon" /></div>
+    <h3>What is GBS?</h3>
+    <p>A rare neurological disorder where the immune system attacks the peripheral nervous system — the nerves outside the brain and spinal cord.</p>
+  </div>
+  <div class="home-info-card home-info-teal">
+    <div class="home-info-icon"><img src="images/icons/i2.png" alt="who can get it icon" /></div>
+    <h3>Who Can Get It?</h3>
+    <p>Anyone at any age — children, youth, elderly. More common in adults over 50 and in males. GBS is <strong>NOT contagious</strong> and <strong>NOT inherited</strong>.</p>
+  </div>
+  <div class="home-info-card home-info-red">
+    <div class="home-info-icon"><img src="images/icons/i3.png" alt="outbreak icon" /></div>
+    <h3>The Pune 2025 Outbreak</h3>
+    <p>In January 2025, a major GBS outbreak hit Pune — 215+ cases linked to contaminated drinking water. Outbreak declared over in March 2025.</p>
+  </div>
+  <div class="home-info-card home-info-green">
+    <div class="home-info-icon"><img src="images/icons/i4.png" alt="recovery icon" /></div>
+    <h3>Recovery is Possible</h3>
+    <p>Most people with GBS fully recover. Timely hospitalisation and treatment — IVIg or Plasma Exchange — can shorten severity significantly.</p>
+  </div>
+</div>
+</section>
+    <!-- ======================== SYMPTOMS ======================== -->
+    <section class="section" id="symptoms">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Symptoms &amp; Actions</h1>
+          <p class="section-subtitle">Click any symptom card to see the recommended action. Symptoms usually start in the legs and move upward.</p>
+        </div>
+
+        <div class="alert-banner alert-blue">
+          Key Rule: Symptoms usually start in the legs and move upward. They can worsen over hours, days, or weeks. Never ignore progressive weakness — act immediately.
+        </div>
+
+        <h2 class="subsection-title">A. Early Symptoms — Act Immediately</h2>
+        <p class="hint-text">Click a symptom card to reveal what you should do.</p>
+
+        <div class="symptom-grid" id="symptomGrid">
+          <div class="symptom-card" data-action="Do not ignore. See a doctor within 24 hours if it does not go away or begins spreading.">
+            <div class="symptom-icon"><img src="images/icons/s1.png" alt="tingling icon" /></div>
+            <h4>Tingling / Prickling sensation in feet or hands</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card" data-action="Go to a hospital immediately. Bilateral (both sides) leg weakness is a key warning sign of GBS.">
+            <div class="symptom-icon"><img src="images/icons/s2.png" alt="leg weakness icon" /></div>
+            <h4>Weakness in both legs</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card" data-action="Seek medical evaluation. Note when it started and how fast it is progressing.">
+            <div class="symptom-icon"><img src="images/icons/s3.png" alt="walking difficulty icon" /></div>
+            <h4>Difficulty in climbing stairs or walking</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card" data-action="Report to a doctor, especially if combined with weakness. Can be an early GBS sign.">
+            <div class="symptom-icon"><img src="images/icons/s4.png" alt="muscle pain icon" /></div>
+            <h4>Severe muscle pain in back or legs (especially at night)</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card" data-action="Unusual sensory symptoms combined with weakness — consult a doctor / neurologist without delay.">
+            <div class="symptom-icon"><img src="images/icons/s5.png" alt="crawling sensation icon" /></div>
+
+            <h4>Crawling sensation on the skin (like insects crawling under the skin)</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card" data-action="Take seriously and consult a doctor the same day. Children often show pain before visible weakness.">
+            <div class="symptom-icon"><img src="images/icons/s6.png" alt="child walking icon" /></div>
+            <h4>Children unable or reluctant to walk due to weakness / pain</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card" data-action="Get evaluated. Loss of coordination can indicate nerve involvement.">
+            <div class="symptom-icon"><img src="images/icons/s7.png" alt="coordination icon" /></div>
+            <h4>Coordination problems / unsteadiness</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+        </div>
+        <div class="action-panel" id="actionPanel1">
+  <div class="action-panel-inner">
+    <span class="action-label">Recommended Action</span>
+    <p id="actionText1"></p>
+    <button class="close-action" data-panel="actionPanel1">Close</button>
+  </div>
+</div>
+
+        <!-- Action panel -->
+
+        <h2 class="subsection-title emergency-title">B. Emergency Warning Signs — Call Emergency Services Immediately</h2>
+
+        <div class="alert-banner alert-red">
+          EMERGENCY ALERT: If any of the following symptoms are experienced or noticed, do NOT wait or self-medicate at home. Call emergency services or visit a hospital immediately.
+        </div>
+
+        <div class="symptom-grid" id="emergencyGrid">
+          <div class="symptom-card symptom-card-emergency" data-action="EMERGENCY. Breathing muscles may be paralyzed. Ventilator support may be needed. Call ambulance immediately.">
+            <div class="symptom-icon"><img src="images/icons/s8.png" alt="breathing icon" /></div>
+            <h4>Difficulty in breathing / shortness of breath</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card symptom-card-emergency" data-action="EMERGENCY. Rapid-spreading paralysis requires immediate medical attention.">
+            <div class="symptom-icon"><img src="images/icons/s9.png" alt="paralysis icon" /></div>
+            <h4>Paralysis spreading to arms, legs, or face</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card symptom-card-emergency" data-action="EMERGENCY. Risk of choking. Go to hospital now.">
+            <div class="symptom-icon"><img src="images/icons/s10.png" alt="swallowing icon" /></div>
+            <h4>Difficulty in swallowing or speaking</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card symptom-card-emergency" data-action="EMERGENCY. GBS can disrupt the autonomic nervous system controlling the heart.">
+            <div class="symptom-icon"><img src="images/icons/s11.png" alt="heart icon" /></div>
+            <h4>Abnormal heart rate or blood pressure</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card symptom-card-emergency" data-action="Urgent care. May indicate Miller Fisher variant of GBS. Seek medical care immediately.">
+            <div class="symptom-icon"><img src="images/icons/s12.png" alt="eye icon" /></div>
+            <h4>Eye muscle weakness / vision problems</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+          <div class="symptom-card symptom-card-emergency" data-action="Requires hospitalisation immediately.">
+            <div class="symptom-icon"><img src="images/icons/s13.png" alt="bladder icon" /></div>
+            <h4>Loss of bladder or bowel control</h4>
+            <span class="click-hint">Click to see action</span>
+          </div>
+        </div>
+        <div class="action-panel" id="actionPanel2">
+  <div class="action-panel-inner">
+    <span class="action-label">Recommended Action</span>
+    <p id="actionText2"></p>
+    <button class="close-action" data-panel="actionPanel2">Close</button>
+  </div>
+</div>
+
+        <div class="alert-banner alert-blue" style="margin-top:2rem;">
+          Timeline to Watch: Most people reach peak weakness within 2 weeks of first symptoms. By week 3, 90% of patients are at their weakest. Speed of diagnosis and treatment matters enormously.
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== CAUSES ======================== -->
+    <section class="section" id="causes">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Causes &amp; Risk Factors</h1>
+          <p class="section-subtitle">Understanding what triggers GBS helps with prevention and early detection.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="info-card info-card-wide">
+            <h3>How Does <span class="gbs-red">GBS</span> Happen?</h3>
+            <ul class="content-list">
+              <li><span class="gbs-red">GBS</span> is an autoimmune condition — the immune system mistakenly attacks the body's own peripheral nerves.</li>
+              <li>The exact cause is not fully understood, but most cases follow a bacterial or viral infection.</li>
+              <li>About 2 in every 3 people had diarrhoea or a respiratory illness before developing GBS.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="subsection-title">Most Common Triggers</h2>
+        <div class="triggers-grid">
+          <div class="trigger-card trigger-primary">
+            <div class="trigger-badge">Most Common</div>
+            <h4><em>Campylobacter jejuni</em> (bacteria)</h4>
+            <p>Most common GBS trigger. Causes gastroenteritis (diarrhoea, nausea, vomiting). About 1 in every 1,000 people with this infection gets GBS. Found in contaminated water and undercooked poultry. Primary cause in the Pune 2025 outbreak.</p>
+          </div>
+          <div class="trigger-card">
+            <h4>Influenza (flu) virus</h4>
+            <p>A recognised viral trigger for GBS.</p>
+          </div>
+          <div class="trigger-card">
+            <h4>Cytomegalovirus, Epstein-Barr, Zika, SARS-CoV-2</h4>
+            <p>Other viral infections linked to GBS development.</p>
+          </div>
+          <div class="trigger-card">
+            <h4>Surgery</h4>
+            <p>Occasionally triggers GBS.</p>
+          </div>
+          <div class="trigger-card trigger-safe">
+            <div class="trigger-badge trigger-badge-green">Very Rare Risk</div>
+            <h4>Vaccines</h4>
+            <p>Risk is extremely low: 1-2 extra cases per million flu vaccine doses. Far less than the risk of getting GBS from flu infection itself.</p>
+          </div>
+        </div>
+
+        <div class="alert-banner alert-blue" style="margin-top:2rem;">
+          The Pune 2025 outbreak was linked to <em>Campylobacter jejuni</em> and Norovirus detected in patient samples and the water supply. Contaminated drinking water was identified as the primary cause.
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PRECAUTIONS ======================== -->
+    <section class="section" id="precautions">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Precautions &amp; Prevention</h1>
+          <p class="section-subtitle">Prevention focuses on avoiding the infections that trigger GBS, especially through food and water safety.</p>
+        </div>
+
+        <div class="precaution-tabs">
+          <button class="ptab active" data-ptab="water">Water Safety</button>
+          <button class="ptab" data-ptab="food">Food Hygiene</button>
+          <button class="ptab" data-ptab="infection">Infection Prevention</button>
+          <button class="ptab" data-ptab="travel">Travel &amp; Public Spaces</button>
+          <button class="ptab" data-ptab="parents">For Parents</button>
+        </div>
+
+        <div class="ptab-content active" id="ptab-water">
+          <div class="precaution-card precaution-priority">
+           <div class="precaution-icon"><img src="images/icons/p1.png" alt="water safety icon" /></div>
+            <div>
+              <h3>Water Safety <span class="priority-badge">Highest Priority</span></h3>
+              <ul class="content-list">
+                <li>Always drink treated, filtered, or boiled water — especially during outbreak alerts.</li>
+                <li>If boiling: boil for at least 20 minutes, then let it cool before drinking. Do not change the container.</li>
+                <li>Avoid drinking water from unknown or untreated sources — wells, tankers, and local supply points of unclear treatment.</li>
+                <li>Regularly maintain and test water purification systems at home or work/school/public places.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ptab-content" id="ptab-food">
+          <div class="precaution-card">
+            <div class="precaution-icon"><img src="images/icons/p2.png" alt="food hygiene icon" /></div>
+            <div>
+              <h3>Food Hygiene (School, Office, Home, Travel)</h3>
+              <ul class="content-list">
+                <li>Wash hands thoroughly with soap before eating and after using the toilet.</li>
+                <li>Avoid raw or improperly cooked street food during outbreak periods.</li>
+                <li>Wash all fruits and vegetables with clean, treated water before eating.</li>
+                <li>Refrigerate food properly; do not eat food left out at room temperature for hours.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ptab-content" id="ptab-infection">
+          <div class="precaution-card">
+            <div class="precaution-icon"><img src="images/icons/p3.png" alt="infection prevention icon" /></div>
+            <div>
+              <h3>Infection Prevention</h3>
+              <ul class="content-list">
+                <li>Wash hands regularly especially after travel, using public transport, or visiting crowded spaces.</li>
+                <li>Get vaccinated against flu annually.</li>
+                <li>If you develop diarrhoea or a respiratory illness, consult a doctor promptly. Watch for neurological symptoms in the days and weeks that follow.</li>
+                <li>Stay informed about local health advisories and water quality alerts from municipal authorities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ptab-content" id="ptab-travel">
+          <div class="precaution-card">
+            <div class="precaution-icon"><img src="images/icons/p4.png" alt="travel icon" /></div>
+            <div>
+              <h3>Travel &amp; Public Spaces</h3>
+              <ul class="content-list">
+                <li>Follow standard hygiene precautions during travel — safe water, clean food, regular handwashing.</li>
+                <li><span class="gbs-red">GBS</span> is not contagious — no travel restrictions are needed during an outbreak.</li>
+                <li>Carry a bottle of safe, treated water when traveling or commuting.</li>
+                <li>During outbreaks: follow government water safety advisories; avoid street-side drinking water.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ptab-content" id="ptab-parents">
+          <div class="precaution-card">
+            <div class="precaution-icon"><img src="images/icons/p5.png" alt="parents icon" /></div>
+            <div>
+              <h3>For Parents — Watch Your Children</h3>
+              <ul class="content-list">
+                <li>Children with GBS may refuse to walk or complain of unusual leg pain — take this seriously and consult a doctor the same day.</li>
+                <li>Early symptoms in children often include pain and tingling sensation in hands and legs before visible weakness develops.</li>
+                <li>Ensure school canteens and home water sources meet safety standards.</li>
+                <li>Educate children about handwashing hygiene from an early age.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================== TREATMENT ======================== -->
+    <section class="section" id="treatment">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Treatment &amp; Recovery</h1>
+          <p class="section-subtitle">There is currently no cure for GBS, but two effective treatments can significantly reduce severity and shorten recovery time.</p>
+        </div>
+
+        <div class="alert-banner alert-red">
+          Immediate Action Required: Anyone suspected of having GBS must be hospitalised immediately. Do not attempt to manage symptoms at home. Every hour of delay increases risk.
+        </div>
+
+        <h2 class="subsection-title">Treatment Options</h2>
+        <div class="treatment-grid">
+          <div class="treatment-card treatment-card-1">
+            <div class="treatment-header">Treatment 1</div>
+            <h3>IVIg — Intravenous Immunoglobulin Therapy</h3>
+            <ul class="content-list">
+              <li>Injections of healthy proteins (immunoglobulins) from donated blood.</li>
+              <li>Dilutes and neutralises the harmful antibodies attacking your nerves.</li>
+              <li>Shortens recovery time significantly.</li>
+            </ul>
+            <div class="cost-note">Cost note (India): Approx. Rs. 20,000 per adult dose — a significant expense for families.</div>
+          </div>
+          <div class="treatment-card treatment-card-2">
+            <div class="treatment-header">Treatment 2</div>
+            <h3>Plasma Exchange (PE) — Plasmapheresis</h3>
+            <ul class="content-list">
+              <li>Blood is removed; plasma (the liquid part containing bad antibodies) is separated out.</li>
+              <li>Blood cells are returned to the body with replacement fluid.</li>
+              <li>Removes the antibodies that are damaging the nerves.</li>
+            </ul>
+            <div class="cost-note">Both treatments are equally effective if started within 2 weeks of symptom onset.</div>
+          </div>
+        </div>
+
+        <div class="alert-banner alert-orange" style="margin-top:1.5rem;">
+          Important: Anti-inflammatory steroid hormones called corticosteroids have been tried to reduce severity of GBS, but clinical trials have shown this treatment is NOT effective. Do not self-medicate with steroids.
+        </div>
+
+        <h2 class="subsection-title">Rehabilitation Care</h2>
+        <div class="cards-grid">
+          <div class="info-card">
+            <div class="card-icon card-icon-teal">&#128170;</div>
+            <h3>Physical Therapy</h3>
+            <p>To rebuild muscle strength, flexibility, and movement.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon card-icon-blue">&#129309;</div>
+            <h3>Occupational Therapy</h3>
+            <p>To help patients relearn daily tasks and return to work.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon card-icon-green">&#129504;</div>
+            <h3>Mental Health Counselling</h3>
+            <p>Sudden paralysis is emotionally devastating; counselling is an important part of recovery.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon card-icon-orange">&#128101;</div>
+            <h3>Support Groups</h3>
+            <p>Can help patients and families cope with the long recovery process.</p>
+          </div>
+        </div>
+
+        <h2 class="subsection-title">Possible Complications (If Untreated or Delayed)</h2>
+        <div class="complications-list">
+          <div class="complication-item">Respiratory failure from breathing muscle paralysis</div>
+          <div class="complication-item">Blood infection (sepsis)</div>
+          <div class="complication-item">Lung blood clots</div>
+          <div class="complication-item">Cardiac arrest</div>
+          <div class="complication-item">Long-term permanent paralysis or nerve damage</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================== MYTHS ======================== -->
+    <section class="section" id="myths">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Myth Buster</h1>
+          <p class="section-subtitle">All myths and misconceptions about GBS — corrected with evidence-based facts. Click a myth to reveal the truth.</p>
+        </div>
+
+        <div class="myths-container">
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"GBS is contagious — stay away from people who have it."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>GBS is NOT contagious. You cannot catch it from another person. No isolation or travel restrictions are needed during a GBS outbreak.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"GBS is a death sentence — if you get it, you won't survive."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>Most people fully recover from GBS, even from the most severe cases. With timely treatment and intensive care, even those requiring ventilator support usually survive.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"GBS only affects old people."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>GBS affects people of all ages including children and youth. In the Pune 2025 outbreak, over 55% of cases were under 30 years old.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"Vaccines cause GBS — avoid all vaccinations."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>The risk is extremely small (1-2 extra cases per million flu vaccine doses). You are far more likely to get GBS from the flu infection itself than from the flu vaccine. Vaccine benefits far outweigh this tiny risk.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"GBS is inherited — if a parent had it, children will get it too."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>GBS is not a hereditary genetic disease. There is no confirmed gene that directly causes GBS. Some genes may influence immune response, but GBS cannot be "passed down" to children.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"If I had diarrhoea and recovered, I cannot get GBS."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>GBS can develop days to weeks after a diarrheal or respiratory illness, even after the infection seems to have resolved. Watch for new neurological symptoms like tingling or progressive weakness in the weeks following any infection.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"Steroids will cure or help GBS."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>Corticosteroids have been tested in clinical trials and proven ineffective for GBS. The correct treatments are IVIg (intravenous immunoglobulin) and plasma exchange.</p>
+            </div>
+          </div>
+
+          <div class="myth-item">
+            <div class="myth-trigger">
+              <span class="myth-label">MYTH</span>
+              <span class="myth-text">"GBS outbreaks are normal and happen everywhere regularly."</span>
+              <span class="myth-arrow">&#9660;</span>
+            </div>
+            <div class="myth-fact">
+              <span class="fact-label">FACT</span>
+              <p>GBS outbreaks are very rare. The Pune 2025 outbreak was highly unusual — driven by contaminated drinking water in a localised urban area. Rapid water sanitation measures successfully contained it within weeks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== DOS & DONTS ======================== -->
+    <section class="section" id="dos">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Do's &amp; Don'ts + FAQs</h1>
+          <p class="section-subtitle">A quick reference guide for the public — what to do, what to avoid, and answers to common questions.</p>
+        </div>
+
+        <div class="dos-donts-grid">
+          <div class="dos-card">
+            <h2 class="dos-title">Do's</h2>
+            <ul class="dos-list">
+              <li>Drink filtered, boiled, or treated water always.</li>
+              <li>Wash hands with soap before eating and after using the toilet.</li>
+              <li>Cook poultry and meat thoroughly before eating.</li>
+              <li>Get annual flu vaccination.</li>
+              <li>Seek a doctor if diarrhoea or respiratory illness is followed by leg weakness or tingling.</li>
+              <li>Go to hospital immediately if neurological symptoms spread.</li>
+              <li>Tell your doctor about recent infections or vaccinations.</li>
+              <li>Follow government water and food safety advisories.</li>
+              <li>Pursue physical therapy and rehabilitation during recovery.</li>
+              <li>Seek mental health support — recovery from GBS is emotionally difficult.</li>
+            </ul>
+          </div>
+          <div class="donts-card">
+            <h2 class="donts-title">Don'ts</h2>
+            <ul class="donts-list">
+              <li>Don't ignore progressive weakness or tingling in limbs.</li>
+              <li>Don't try to manage GBS symptoms at home — seek medical care.</li>
+              <li>Don't delay treatment — every hour matters.</li>
+              <li>Don't take steroids as a GBS treatment — clinical trials show they do not work.</li>
+              <li>Don't drink water from unknown or untreated sources.</li>
+              <li>Don't eat undercooked chicken or unverified street food during outbreak alerts.</li>
+              <li>Don't avoid all vaccines out of GBS fear — flu infection carries far higher risk.</li>
+              <li>Don't assume GBS is contagious — no isolation from patients is needed.</li>
+              <li>Don't ignore a child who refuses to walk or complains of unexplained leg pain.</li>
+              <li>Don't skip mental health support during the recovery process.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="subsection-title" style="margin-top:2.5rem;">FAQs — Common Questions from Parents &amp; Youth</h2>
+        <div class="faq-container">
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q">Q1</span>
+              Can my child get GBS?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes. GBS can affect anyone, including children and young adults. In the 2025 Pune outbreak, more than 55% of cases were under 30 years of age. Children may show early signs by refusing to walk or complaining of unexplained leg pain.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q">Q2</span>
+              Is GBS the same as paralysis from a spinal injury?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              <p>No. GBS-related weakness comes from nerve damage caused by an immune response — not from a spinal injury. Unlike a spinal injury, GBS nerve damage can heal. Most people with GBS recover fully with appropriate treatment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q">Q3</span>
+              Should I avoid the flu vaccine because of GBS risk?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              <p>No. The risk of developing GBS from the flu vaccine is estimated at 1-2 extra cases per million doses (an extremely small risk). Studies consistently show that the risk of getting GBS from the flu infection itself is significantly higher than from the vaccine. Annual flu vaccination remains strongly recommended.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q">Q4</span>
+              Can GBS be prevented completely?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              <p>Maintaining good hygiene, ensuring safe drinking water, properly cooking food, and getting vaccinated against flu significantly reduce your risk of the infections that can trigger GBS.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q">Q5</span>
+              What tests confirm GBS?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              <p>Doctors assess symptoms and perform a physical examination checking reflexes (which are reduced or absent in GBS). Additional tests may include nerve conduction velocity studies, cerebrospinal fluid analysis, and MRI scans. Importantly, treatment should not be delayed while waiting for test results — GBS diagnosis can be made based on clinical signs.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== EXPERT CORNER ======================== -->
+    <section class="section" id="expert">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Expert Corner</h1>
+          <p class="section-subtitle">Watch expert perspectives on Guillain-Barré Syndrome from leading medical professionals.</p>
+        </div>
+
+        <div class="expert-grid">
+          <div class="expert-card">
+            <div class="expert-badge">Clinical Perspective</div>
+            <h3>Dr. Sameer Jog</h3>
+            <p class="expert-desc">Clinical perspective on Guillain-Barré Syndrome — diagnosis, treatment protocols, and patient management.</p>
+            <div class="video-container">
+              <iframe
+                src="https://drive.google.com/file/d/1Dj-oEg-XmGReNron_fSKRiht_brXIZ4l/preview"
+                allow="autoplay"
+                allowfullscreen
+                title="Dr. Sameer Jog - Clinical Perspective on GBS"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="expert-card">
+            <div class="expert-badge expert-badge-green">Public Health Perspective</div>
+            <h3>Dr. Pradeep Awate</h3>
+            <p class="expert-desc">Public health perspective on the GBS outbreak — epidemiology, community response, and prevention strategies.</p>
+            <div class="video-container">
+              <iframe
+                src="https://drive.google.com/file/d/1aupu5woYTDVo9YShz5HH4Z_IDVHkDJfx/preview"
+                allow="autoplay"
+                allowfullscreen
+                title="Dr. Pradeep Awate - Public Health Perspective on GBS"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert-banner alert-blue" style="margin-top:2rem;">
+          Note: If videos do not load, ensure you are connected to the internet. Videos are hosted on Google Drive. You may need to click the play button inside the video player.
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== GALLERY ======================== -->
+<!-- ======================== GALLERY ======================== -->
+    <section class="section" id="gallery">
+      <div class="section-inner">
+        <div class="section-header">
+          <h1>Media Gallery</h1>
+          <p class="section-subtitle">Browse awareness materials by category. Click any image to enlarge.</p>
+        </div>
+
+        <div class="gallery-tabs">
+          <button class="gtab active" data-category="all">All</button>
+          <button class="gtab" data-category="comics">Comic Strips</button>
+          <button class="gtab" data-category="infographics">Infographics</button>
+          <button class="gtab" data-category="nukkad">Nukkad Natak</button>
+          <button class="gtab" data-category="audio">Audio Materials</button>
+          <button class="gtab" data-category="prevention">Prevention Wall</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+          <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+          <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+          <div class="lightbox-img-wrap">
+            <img src="" alt="Gallery image" id="lightboxImg" />
+          </div>
+          <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
