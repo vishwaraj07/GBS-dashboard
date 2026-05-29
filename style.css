@@ -368,12 +368,11 @@ html, body {
 }
 /* ===================== MAIN CONTENT ===================== */
 .main-content {
-  margin-left: 0;
-  margin-top: 56px;
-  height: calc(100vh - 56px);
-  overflow: hidden;
-  position: relative;
-}
+    margin-top: 0;
+    padding-top: 60px;
+    height: auto;
+    overflow: visible;
+  }
 
 .section {
   position: absolute;
@@ -389,6 +388,29 @@ html, body {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    height: auto;
+    overflow: visible;
+    position: relative;
+  }
+
+  .section {
+    position: relative;
+    inset: auto;
+    display: none;
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+    overflow-y: visible;
+    height: auto;
+  }
+
+  .section.active {
+    display: block;
+  }
 }
 
 .section-inner {
