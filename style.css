@@ -46,6 +46,14 @@ html, body {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  html, body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
 /* ===================== SIDEBAR ===================== */
 
 /* ===================== HAMBURGER ===================== */
@@ -391,25 +399,33 @@ html, body {
 }
 
 @media (max-width: 768px) {
+
   .main-content {
+    margin-top: 0;
+    padding-top: 60px;
     height: auto;
-    overflow: visible;
-    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: static;
   }
 
   .section {
-    position: relative;
+    position: static;
     inset: auto;
     display: none;
     opacity: 1;
     transform: none;
     pointer-events: all;
-    overflow-y: visible;
+    overflow: visible;
     height: auto;
+    min-height: 100vh;
   }
 
   .section.active {
     display: block;
+    opacity: 1;
+    transform: none;
   }
 }
 
