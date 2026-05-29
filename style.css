@@ -1706,3 +1706,239 @@ html, body {
   width: 100%;
   margin-top: 0.25rem;
 }
+
+/* =============================================
+   MOBILE RESPONSIVE FIXES
+   ============================================= */
+
+@media (max-width: 768px) {
+
+  /* TOP NAV */
+  .topnav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .topnav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 2px;
+  }
+
+  .topnav-links.open {
+    display: flex;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: left;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .topnav-logo img {
+    height: 28px;
+  }
+
+  /* MAIN CONTENT */
+  .main-content {
+    margin-top: 0;
+    padding-top: 56px;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .section {
+    position: relative;
+    overflow-y: visible;
+  }
+
+  .section-inner {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  /* HOME HERO */
+  .hero-banner {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .hero-stat-stack {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .hero-stat-card {
+    padding: 0.85rem 0.75rem;
+    gap: 0.6rem;
+  }
+
+  .hero-stat-num {
+    font-size: 1.3rem;
+  }
+
+  .hero-stat-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .hero-tags {
+    gap: 0.35rem;
+  }
+
+  .tag {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  /* HOME INFO CARDS */
+  .home-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* SLIDER */
+  .slider-container {
+    height: 220px;
+  }
+
+  /* STAT ROW */
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* SECTION HEADERS */
+  .section-header h1 {
+    font-size: 1.5rem;
+  }
+
+  /* SYMPTOM GRID */
+  .symptom-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .symptom-card {
+    padding: 1rem 0.75rem;
+    min-height: 170px;
+  }
+
+  .symptom-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .symptom-card h4 {
+    font-size: 0.78rem;
+  }
+
+  /* TRIGGERS GRID */
+  .triggers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PRECAUTION TABS */
+  .precaution-tabs {
+    gap: 0.4rem;
+  }
+
+  .ptab {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.85rem;
+  }
+
+  .precaution-card {
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  /* TREATMENT */
+  .treatment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .complications-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* DOS AND DONTS */
+  .dos-donts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* EXPERT CORNER */
+  .expert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* GALLERY */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .gallery-tabs {
+    gap: 0.4rem;
+  }
+
+  .gtab {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.85rem;
+  }
+
+  /* MYTH BUSTER */
+  .myth-text {
+    font-size: 0.84rem;
+  }
+
+  /* ACTION PANEL */
+  .action-panel-inner {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* LIGHTBOX */
+  .lightbox-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+  }
+
+  .lightbox-prev { left: 0.25rem; }
+  .lightbox-next { right: 0.25rem; }
+}
+
+@media (max-width: 400px) {
+  .symptom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stat-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+}
